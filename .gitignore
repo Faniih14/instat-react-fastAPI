@@ -1,0 +1,15 @@
+ # Backend
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# Sensible
+.env
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Système
+.DS_Store
+Thumbs.db
