@@ -3,8 +3,13 @@ from fastapi import FastAPI,Depends
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from db.database import SessionLocal
-
+from auth.routes import router as auth_router
 app = FastAPI()
+
+
+#appel route authentification
+app.include_router(auth_router,prefix="/auth",tags=["auth"]) 
+
 
 # CORS
 app.add_middleware(

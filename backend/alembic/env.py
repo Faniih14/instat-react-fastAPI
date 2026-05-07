@@ -8,6 +8,13 @@ from dotenv import load_dotenv
 import os
 
 from models.tache import Tache
+from models.test import Test
+from models.posts import Post
+from models.pages import Page
+from models.recrutements import Recrutement
+from models.roles import Role
+from models.users import User
+from models.user_roles import UserRole
 
 from alembic import context
 
